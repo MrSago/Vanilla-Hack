@@ -1,6 +1,6 @@
 ﻿namespace Vanilla_Hack
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.procID_label = new System.Windows.Forms.Label();
@@ -62,7 +62,7 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Interval = 50;
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // label1
             // 
@@ -180,7 +180,7 @@
             this.findBase_button.TabIndex = 15;
             this.findBase_button.Text = "Find Player Base";
             this.findBase_button.UseVisualStyleBackColor = true;
-            this.findBase_button.Click += new System.EventHandler(this.button1_ClickAsync);
+            this.findBase_button.Click += new System.EventHandler(this.Button1_ClickAsync);
             // 
             // speedHack_checkBox
             // 
@@ -191,7 +191,7 @@
             this.speedHack_checkBox.TabIndex = 16;
             this.speedHack_checkBox.Text = "SpeedHack";
             this.speedHack_checkBox.UseVisualStyleBackColor = true;
-            this.speedHack_checkBox.CheckedChanged += new System.EventHandler(this.checkBoxHacks_CheckedChanged);
+            this.speedHack_checkBox.CheckedChanged += new System.EventHandler(this.CheckBoxHacks_CheckedChanged);
             // 
             // fallingHack_checkBox
             // 
@@ -202,7 +202,7 @@
             this.fallingHack_checkBox.TabIndex = 17;
             this.fallingHack_checkBox.Text = "FallingHack";
             this.fallingHack_checkBox.UseVisualStyleBackColor = true;
-            this.fallingHack_checkBox.CheckedChanged += new System.EventHandler(this.checkBoxHacks_CheckedChanged);
+            this.fallingHack_checkBox.CheckedChanged += new System.EventHandler(this.CheckBoxHacks_CheckedChanged);
             // 
             // fallingSpeed_box
             // 
@@ -230,19 +230,18 @@
             this.antiRoot_checkbox.TabIndex = 20;
             this.antiRoot_checkbox.Text = "Anti-Root";
             this.antiRoot_checkbox.UseVisualStyleBackColor = true;
-            this.antiRoot_checkbox.CheckedChanged += new System.EventHandler(this.checkBoxHacks_CheckedChanged);
+            this.antiRoot_checkbox.CheckedChanged += new System.EventHandler(this.CheckBoxHacks_CheckedChanged);
             // 
             // wallClimbing_checkBox
             // 
             this.wallClimbing_checkBox.AutoSize = true;
-            this.wallClimbing_checkBox.Enabled = false;
             this.wallClimbing_checkBox.Location = new System.Drawing.Point(12, 232);
             this.wallClimbing_checkBox.Name = "wallClimbing_checkBox";
             this.wallClimbing_checkBox.Size = new System.Drawing.Size(89, 17);
             this.wallClimbing_checkBox.TabIndex = 21;
             this.wallClimbing_checkBox.Text = "Wall Climbing";
             this.wallClimbing_checkBox.UseVisualStyleBackColor = true;
-            this.wallClimbing_checkBox.CheckedChanged += new System.EventHandler(this.checkBoxHacks_CheckedChanged);
+            this.wallClimbing_checkBox.CheckedChanged += new System.EventHandler(this.CheckBoxHacks_CheckedChanged);
             // 
             // noFallingDamage_checkBox
             // 
@@ -253,19 +252,18 @@
             this.noFallingDamage_checkBox.TabIndex = 22;
             this.noFallingDamage_checkBox.Text = "No Falling Damage";
             this.noFallingDamage_checkBox.UseVisualStyleBackColor = true;
-            this.noFallingDamage_checkBox.CheckedChanged += new System.EventHandler(this.checkBoxHacks_CheckedChanged);
+            this.noFallingDamage_checkBox.CheckedChanged += new System.EventHandler(this.CheckBoxHacks_CheckedChanged);
             // 
             // flyHack_checkBox
             // 
             this.flyHack_checkBox.AutoSize = true;
-            this.flyHack_checkBox.Enabled = false;
             this.flyHack_checkBox.Location = new System.Drawing.Point(12, 278);
             this.flyHack_checkBox.Name = "flyHack_checkBox";
             this.flyHack_checkBox.Size = new System.Drawing.Size(65, 17);
             this.flyHack_checkBox.TabIndex = 23;
             this.flyHack_checkBox.Text = "FlyHack";
             this.flyHack_checkBox.UseVisualStyleBackColor = true;
-            this.flyHack_checkBox.CheckedChanged += new System.EventHandler(this.checkBoxHacks_CheckedChanged);
+            this.flyHack_checkBox.CheckedChanged += new System.EventHandler(this.CheckBoxHacks_CheckedChanged);
             // 
             // heartBeat_checkBox
             // 
@@ -276,7 +274,7 @@
             this.heartBeat_checkBox.TabIndex = 24;
             this.heartBeat_checkBox.Text = "Low Heartbeat Interval";
             this.heartBeat_checkBox.UseVisualStyleBackColor = true;
-            this.heartBeat_checkBox.CheckedChanged += new System.EventHandler(this.checkBoxHacks_CheckedChanged);
+            this.heartBeat_checkBox.CheckedChanged += new System.EventHandler(this.CheckBoxHacks_CheckedChanged);
             // 
             // disableWarden_checkBox
             // 
@@ -298,7 +296,7 @@
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
-            // Form1
+            // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -330,7 +328,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.Name = "Form1";
+            this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Vanilla Hack";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
